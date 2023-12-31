@@ -37,7 +37,7 @@ The essence is the following: the 8 bits are separated into 3 + 5 bits
 
 The main problem with the notation is that the visibility of the diacritics
 is very font dependent and is likely indiscernible or badly rendered with many fonts.
-As an example, the above hex strings would be represented as follows with the proposed byte alphabet:
+As an example, the above hex strings would be represented as follows with the proposed byte alphabet (where indeed the tilde's are not displayed properly):
 ```
 8  : 0y1T (none)
 16 : 0y10B̲ (underline)
