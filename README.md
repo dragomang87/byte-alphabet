@@ -32,5 +32,5 @@ The full alphabet and design choices are explain in length in the text file duot
 The essence is the following: the 8 bits are separated into 3 + 5 bits
 * 5 bits are assigned their own basic symbols, namely an extension of hex 0 to F to 32 symbols going from 0 to Z (I O U V are excluded)
 * 3 bits are assigned to 7 different diacritics (000 corresponds to no diacritics, just the basic alphabet):
-  * <none>, underline, strikethrough, overline
+  * none, underline, strikethrough, overline
   * tilde, slash, circumflex (hat), dieresis (umlaut)
