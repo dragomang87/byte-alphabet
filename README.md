@@ -34,3 +34,16 @@ The essence is the following: the 8 bits are separated into 3 + 5 bits
 * 3 bits are assigned to 7 different diacritics (000 corresponds to no diacritics, just the basic alphabet):
   * none, underline, strikethrough, overline
   * tilde, slash, circumflex (hat), dieresis (umlaut)
+
+The main problem with the notation is that the visibility of the diacritics
+is very font dependent and is likely indiscernible or badly rendered with many fonts.
+As an example, the above hex strings would be represented as follows with the proposed byte alphabet:
+```
+8  : 0y1T (none)
+16 : 0y10B̲ (underline)
+32 : 0y1000 ̃D (tilde)
+64 : 0y10000000T (none)
+128: 0y1000000000000000 ̃7 (tilde)
+256: 0y10000000000000000000000000000004R (none)
+512: 0y1000000000000000000000000000000000000000000000000000000000000001R (none)
+```
