@@ -12,7 +12,8 @@ While still the shortest representation, hexadecimal representations of 128 bits
 are still quite large and unmanageable in manual and direct inspection.
 This is exacerbated by the fact that most of the time the number of bits of the data chunks are themselves powers of 2.
 
-For example, the Conway polynomials for 8, 16, 32, 64, 128, 256, 512 bits are represented in hex as follows:
+For example, the following are representations of low weight irreducible polynomials for 8, 16, 32, 64, 128, 256, 512 bits
+taken from https://www.hpl.hp.com/techreports/98/HPL-98-135.pdf:
 ```
 8  : 0x11b
 16 : 0x1002b
