@@ -1,1 +1,230 @@
-/home/roberto/Dropbox/backups/linux/home/XCompose
+include "%L"
+
+# GREEK CAPITAL LETTERS
+<Multi_key> <A> <l>: "Α"    U0391    # GREEK CAPITAL LETTER ALPHA
+<Multi_key> <B> <e>: "Β"    U0392    # GREEK CAPITAL LETTER BETA
+<Multi_key> <G> <a>: "Γ"    U0393    # GREEK CAPITAL LETTER GAMMA
+<Multi_key> <D> <e>: "Δ"    U0394    # GREEK CAPITAL LETTER DELTA
+<Multi_key> <E> <p>: "Ε"    U0395    # GREEK CAPITAL LETTER EPSILON
+<Multi_key> <Z> <e>: "Ζ"    U0396    # GREEK CAPITAL LETTER ZETA
+<Multi_key> <E> <t>: "Η"    U0397    # GREEK CAPITAL LETTER ETA
+<Multi_key> <T> <h>: "Θ"    U0398    # GREEK CAPITAL LETTER THETA
+<Multi_key> <I> <o>: "Ι"    U0399    # GREEK CAPITAL LETTER IOTA
+<Multi_key> <K> <a>: "Κ"    U039A    # GREEK CAPITAL LETTER KAPPA
+<Multi_key> <L> <a>: "Λ"    U039B    # GREEK CAPITAL LETTER LAMDA
+<Multi_key> <M> <u>: "Μ"    U039C    # GREEK CAPITAL LETTER MU
+<Multi_key> <N> <u>: "Ν"    U039D    # GREEK CAPITAL LETTER NU
+<Multi_key> <X> <i>: "Ξ"    U039E    # GREEK CAPITAL LETTER XI
+<Multi_key> <O> <h>: "Ο"    U039F    # GREEK CAPITAL LETTER OMICRON
+<Multi_key> <P> <i>: "Π"    U03A0    # GREEK CAPITAL LETTER PI
+<Multi_key> <R> <h>: "Ρ"    U03A1    # GREEK CAPITAL LETTER RHO
+<Multi_key> <S> <i>: "Σ"    U03A3    # GREEK CAPITAL LETTER SIGMA
+<Multi_key> <T> <a>: "Τ"    U03A4    # GREEK CAPITAL LETTER TAU
+<Multi_key> <U> <p>: "Υ"    U03A5    # GREEK CAPITAL LETTER UPSILON
+<Multi_key> <P> <h>: "Φ"    U03A6    # GREEK CAPITAL LETTER PHI
+<Multi_key> <C> <h>: "Χ"    U03A7    # GREEK CAPITAL LETTER CHI
+<Multi_key> <P> <s>: "Ψ"    U03A8    # GREEK CAPITAL LETTER PSI
+<Multi_key> <O> <m>: "Ω"    U03A9    # GREEK CAPITAL LETTER OMEGA
+
+# greek small letters
+<Multi_key> <a> <l>: "α"    U03B1    # GREEK SMALL LETTER ALPHA
+# Collision with ĕ
+<Multi_key> <b> <e>: "β"    U03B2    # GREEK SMALL LETTER BETA
+<Multi_key> <v> <e>: "ĕ"
+<Multi_key> <g> <a>: "γ"    U03B3    # GREEK SMALL LETTER GAMMA
+<Multi_key> <d> <e>: "δ"    U03B4    # GREEK SMALL LETTER DELTA
+<Multi_key> <e> <p>: "ε"    U03B5    # GREEK SMALL LETTER EPSILON
+<Multi_key> <z> <e>: "ζ"    U03B6    # GREEK SMALL LETTER ZETA
+<Multi_key> <e> <t>: "η"    U03B7    # GREEK SMALL LETTER ETA
+# Collision with þ
+<Multi_key> <t> <h>: "θ"    U03B8    # GREEK SMALL LETTER THETA
+<Multi_key> <bar> <p>: "þ"
+#<Multi_key> <|> <p>: "þ"
+#<Multi_key> </> <p>: "þ"
+#<Multi_key> <\> <p>: "þ"
+<Multi_key> <i> <o>: "ι"    U03B9    # GREEK SMALL LETTER IOTA
+<Multi_key> <k> <a>: "κ"    U03BA    # GREEK SMALL LETTER KAPPA
+<Multi_key> <l> <a>: "λ"    U03BB    # GREEK SMALL LETTER LAMDA
+<Multi_key> <m> <u>: "μ"    U03BC    # GREEK SMALL LETTER MU
+<Multi_key> <n> <u>: "ν"    U03BD    # GREEK SMALL LETTER NU
+<Multi_key> <x> <i>: "ξ"    U03BE    # GREEK SMALL LETTER XI
+<Multi_key> <o> <h>: "ο"    U03BF    # GREEK SMALL LETTER OMICRON
+<Multi_key> <p> <i>: "π"    U03C0    # GREEK SMALL LETTER PI
+<Multi_key> <r> <h>: "ρ"    U03C1    # GREEK SMALL LETTER RHO
+<Multi_key> <s> <i>: "σ"    U03C3    # GREEK SMALL LETTER SIGMA
+<Multi_key> <v> <s>: "ς"    U03C2    # GREEK SMALL LETTER FINAL SIGMA
+<Multi_key> <t> <a>: "τ"    U03C4    # GREEK SMALL LETTER TAU
+<Multi_key> <u> <p>: "υ"    U03C5    # GREEK SMALL LETTER UPSILON
+<Multi_key> <p> <h>: "φ"    U03C6    # GREEK SMALL LETTER PHI
+<Multi_key> <v> <p>: "ϕ"    U03D5    # GREEK PHI SYMBOL
+# Collision with ȟ
+<Multi_key> <c> <h>: "χ"    U03C7    # GREEK SMALL LETTER CHI
+<Multi_key> <v> <h>: "ȟ"
+<Multi_key> <p> <s>: "ψ"    U03C8    # GREEK SMALL LETTER PSI
+<Multi_key> <o> <m>: "ω"    U03C9    # GREEK SMALL LETTER OMEGA
+
+
+# 𝔻𝕠𝕦𝕓𝕝𝕖 𝕤𝕥𝕣𝕠𝕜𝕖
+
+<Multi_key> <0> <0>: "𝟘"
+<Multi_key> <1> <1>: "𝟙"
+<Multi_key> <2> <2>: "𝟚"
+<Multi_key> <3> <3>: "𝟛"
+<Multi_key> <4> <4>: "𝟜"
+<Multi_key> <5> <5>: "𝟝"
+<Multi_key> <6> <6>: "𝟞"
+<Multi_key> <7> <7>: "𝟟"
+<Multi_key> <8> <8>: "𝟠"
+<Multi_key> <9> <9>: "𝟡"
+
+<Multi_key> <A> <A> : "𝔸"
+<Multi_key> <B> <B> : "𝔹"
+<Multi_key> <C> <C> : "ℂ"
+<Multi_key> <D> <D> : "𝔻"
+<Multi_key> <E> <E> : "𝔼"
+<Multi_key> <F> <F> : "𝔽"
+<Multi_key> <G> <G> : "𝔾"
+<Multi_key> <H> <H> : "ℍ"
+<Multi_key> <I> <I> : "𝕀"
+<Multi_key> <J> <J> : "𝕁"
+<Multi_key> <K> <K> : "𝕂"
+<Multi_key> <L> <L> : "𝕃"
+<Multi_key> <M> <M> : "𝕄"
+<Multi_key> <N> <N> : "ℕ"
+<Multi_key> <O> <O> : "𝕆"
+<Multi_key> <P> <P> : "ℙ"
+<Multi_key> <Q> <Q> : "ℚ"
+<Multi_key> <R> <R> : "ℝ"
+<Multi_key> <S> <S> : "𝕊"
+<Multi_key> <T> <T> : "𝕋"
+<Multi_key> <U> <U> : "𝕌"
+<Multi_key> <V> <V> : "𝕍"
+<Multi_key> <W> <W> : "𝕎"
+<Multi_key> <X> <X> : "𝕏"
+<Multi_key> <Y> <Y> : "𝕐"
+<Multi_key> <Z> <Z> : "ℤ"
+
+<Multi_key> <a> <a> : "𝕒"
+<Multi_key> <b> <b> : "𝕓"
+<Multi_key> <c> <c> : "𝕔"
+<Multi_key> <d> <d> : "𝕕"
+<Multi_key> <e> <e> : "𝕖"
+<Multi_key> <f> <f> : "𝕗"
+<Multi_key> <g> <g> : "𝕘"
+<Multi_key> <h> <h> : "𝕙"
+<Multi_key> <i> <i> : "𝕚"
+<Multi_key> <j> <j> : "𝕛"
+<Multi_key> <k> <k> : "𝕜"
+<Multi_key> <l> <l> : "𝕝"
+<Multi_key> <m> <m> : "𝕞"
+<Multi_key> <n> <n> : "𝕟"
+<Multi_key> <o> <o> : "𝕠"
+<Multi_key> <p> <p> : "𝕡"
+<Multi_key> <q> <q> : "𝕢"
+<Multi_key> <r> <r> : "𝕣"
+<Multi_key> <s> <s> : "𝕤"
+<Multi_key> <t> <t> : "𝕥"
+<Multi_key> <u> <u> : "𝕦"
+<Multi_key> <v> <v> : "𝕧"
+<Multi_key> <w> <w> : "𝕨"
+<Multi_key> <x> <x> : "𝕩"
+<Multi_key> <y> <y> : "𝕪"
+<Multi_key> <z> <z> : "𝕫"
+
+
+# Math
+
+# <Multi_key> <N> <N>: "ℕ"
+# <Multi_key> <Z> <Z>: "ℤ"
+# <Multi_key> <Q> <Q>: "ℚ"
+# <Multi_key> <R> <R>: "ℝ"
+# <Multi_key> <C> <C>: "ℂ"
+<Multi_key> <i> <n>: "∈"
+<Multi_key> <n> <i> <n>: "∉"
+<Multi_key> <v> <v>: "∨"
+<Multi_key> <asciicircum> <asciicircum>: "∧" # big AND sign
+<Multi_key> <s> <u> <m>: "∑"
+<Multi_key> <k> <e> <t>: "⟩"
+<Multi_key> <b> <r> <a>: "⟨"
+<Multi_key> <O> <x>: "⊗"
+<Multi_key> <O> <plus>: "⊕"
+<Multi_key> <O> <asterisk>: "⊛" # U+229B # Since + and * are addition and multiplication, and <O> <plus>: "⊕" is XOR addition, I choose <O> <asterisk>: "⊛" for XOR multiplication
+<Multi_key> <d> <d>: "∂"
+<Multi_key> <e> <x>: "∃"
+<Multi_key> <f> <a>: "∀"
+# Need to remap ˚ because oo or OO are taken by 𝕠 and 𝕆
+<Multi_key> <o> <C>: "˚" # U+02DA # because ˚C is centigrades, feel free to change C to F or K
+
+<Multi_key> <c> <period>: "⋅"
+#<Multi_key> <c> <.>: "⋅"
+<Multi_key> <colon> <equal>: "≔"
+#<Multi_key> <:> <=>: "≔"
+
+
+
+# Special Keysyms
+## Some non trivial keysyms do not work because there are multiple versions of them
+## some because they have the dead key variant and the ascii variant
+## Not working      Dead key             Ascii key
+##   <+>                                 <plus>
+##   <^>            <dead_circumflex>    <asciicircum>
+##   <|>                                 <bar>
+##   <:>                                 <colon>
+##   <*>                                 <asterisk>
+##   <~>            <dead_tilde>         <asciitilde>
+##                  <dead_diaeresis>     <diaeresis>
+## Others:  <greater> <acute><dead_acute> <grave><dead_grave> <apostrophe>
+##          <equal> <period> <dead_stroke><slash> <less> <minus> <underscore>
+##          <parenleft>
+##          <comma> <quotedbl>
+
+# Combining symbols
+# ⋅ combining symbol position depends on the diacritic, font and program:
+#   it can go either *before* or *after* but predictably
+# ⋅ string or file cannot start with combining symbol?
+# ⋅ UTF8 and UTF16 symbols are different
+# ⋅ UTF8 - UTF16 = 0xC920
+# ⋅ python    uses UTF16
+# ⋅ alacritty uses UTF8
+#
+# Hex values (taken from https://www.fileformat.info/info/unicode)
+#                                UNICODE
+#                         UTF-8  UTF-16  Position example (SauceCodePro Nerd Font)
+# circumflex (hat)     ^: 0xCC82 0x0302  before
+# tilde                ~: 0xCC83 0x0303  before
+# overline             ¯: 0xCC85 0x0305  before
+# diaeresis/umlaut     ": 0xCC88 0x0308  before
+# ring above           ˚: 0xCC8A 0x030A  before
+# low line/underscore  _: 0xCCB2 0x0332  after
+# long stroke overlay  -: 0xCCB6 0x0336  after
+#   (strikethrough)
+# long solidus overlay /: 0xCCB8 0x0338  after
+#   (slash)
+#
+# How to write 0x<hex>:
+#   - In Python/C/C++/Java: "\u<UTF16 hex>"
+#   - In terminal:  echo -e "\x<UTF8 hex pair 1>\x<UTF8 hex pair 2>..."
+#                   (split the hex in pairs preceded by \x)
+<Multi_key> <c> <m> <asciicircum> <asciicircum>: "\xCC\x82" UCC82  # "\"\\u0302\"" U0302  # "\u0302" U0302  #
+<Multi_key> <c> <m> <asciitilde>:                "\xCC\x83" UCC83  # "\"\\u0303\"" U0303  # "\u0303" U0303  #
+<Multi_key> <c> <m> <asciicircum> <minus>:       "\xCC\x85" UCC85  # "\"\\u0305\"" U0305  # "\u0305" U0305  #
+<Multi_key> <c> <m> <asciicircum> <underscore>:  "\xCC\x85" UCC85  # "\"\\u0305\"" U0305  # "\u0305" U0305  #
+<Multi_key> <c> <m> <quotedbl>:                  "\xCC\x88" UCC88  # "\"\\u0308\"" U0308  # "\u0308" U0308  #
+<Multi_key> <c> <m> <o>:                         "\xCC\x8A" UCC8A  # "\"\\u030A\"" U030A  # "\u030A" U030A  #
+<Multi_key> <c> <m> <underscore>:                "\xCC\xB2" UCCB2  # "\"\\u0332\"" U0332  # "\u0332" U0332  #
+<Multi_key> <c> <m> <minus>:                     "\xCC\xB6" UCCB6  # "\"\\u0336\"" U0336  # "\u0336" U0336  #
+<Multi_key> <c> <m> <slash>:                     "\xCC\xB8" UCCB8  # "\"\\u0338\"" U0338  # "\u0338" U0338  #
+
+<Multi_key> <f> <t> <1>:  "\xCC\xB8"    # LÌ¸L
+<Multi_key> <f> <t> <2>:  "\"\\u0338\"" # L"\u0338"L
+<Multi_key> <f> <t> <3>:  "\u0338"      # LL
+<Multi_key> <f> <t> <4>:   "+0338"      # L+0338L
+<Multi_key> <f> <t> <5>:  "U+0338"      # LU+0338L
+<Multi_key> <f> <t> <6>:  "%03%38"      # L%03%38L
+<Multi_key> <f> <t> <7>:  "%CC%B8"      # L%CC%B8L
+<Multi_key> <f> <t> <8>:  "&#0338"      # L&#0338L
+<Multi_key> <f> <t> <9>:  "0x0338"      # L0x0338L
+
+# symbols: ∮  ∏ א ∞ ⊂ ⊆ ∌ ∋ ⊇ ⊃ o ∘ ⋅  † T ⊤ ⊥ ¬ ∪ ∩  ⋉ ⋊ ⋈ ∝    ≡ ≪ ≫ ≤ ≥ ≦ ≧ ≺ ≻ ⇔ ⇒ ⇌ ↑ ↗ ↨ ↻ ა ⇣  ⌈⌉ ⌊⌋ ⟦⟧ ⟪⟫
+# implemented:  → ≠ √ ∨ ∧ ⊕ ⊗ ∑ ∂ ∀ ∃ ∉ ∈
+
