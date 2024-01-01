@@ -57,16 +57,16 @@ Full byte symbol table
     0x000.....: 0 1 2 3 4 5 6 7 8 9 A B C D E F G H J K L M N P Q R S T W X Y Z
     0x001.....: 0̲ 1̲ 2̲ 3̲ 4̲ 5̲ 6̲ 7̲ 8̲ 9̲ A̲ B̲ C̲ D̲ E̲ F̲ G̲ H̲ J̲ K̲ L̲ M̲ N̲ P̲ Q̲ R̲ S̲ T̲ W̲ X̲ Y̲ Z̲
     0x010.....: 0̶ 1̶ 2̶ 3̶ 4̶ 5̶ 6̶ 7̶ 8̶ 9̶ A̶ B̶ C̶ D̶ E̶ F̶ G̶ H̶ J̶ K̶ L̶ M̶ N̶ P̶ Q̶ R̶ S̶ T̶ W̶ X̶ Y̶ Z̶
-    0x011.....: ̅0 ̅1 ̅2 ̅3 ̅4 ̅5 ̅6 ̅7 ̅8 ̅9 ̅A ̅B ̅C ̅D ̅E ̅F ̅G ̅H ̅J ̅K ̅L ̅M ̅N ̅P ̅Q ̅R ̅S ̅T ̅W ̅X ̅Y ̅Z
+    0x011.....: 0̅ 1̅ 2̅ 3̅ 4̅ 5̅ 6̅ 7̅ 8̅ 9̅ A̅ B̅ C̅ D̅ E̅ F̅ G̅ H̅ J̅ K̅ L̅ M̅ N̅ P̅ Q̅ R̅ S̅ T̅ W̅ X̅ Y̅ Z̅
     → count from bottom up: " " = 00, "_" = 01, "-" = 10, "¯" = 11
 
-    0x100.....: ̃0 ̃1 ̃2 ̃3 ̃4 ̃5 ̃6 ̃7 ̃8 ̃9 ̃A ̃B ̃C ̃D ̃E ̃F ̃G ̃H ̃J ̃K ̃L ̃M ̃N ̃P ̃Q ̃R ̃S ̃T ̃W ̃X ̃Y ̃Z
+    0x100.....: 0̃ 1̃ 2̃ 3̃ 4̃ 5̃ 6̃ 7̃ 8̃ 9̃ Ã B̃ C̃ D̃ Ẽ F̃ G̃ H̃ J̃ K̃ L̃ M̃ Ñ P̃ Q̃ R̃ S̃ T̃ W̃ X̃ Ỹ Z
     0x101.....: 0̸ 1̸ 2̸ 3̸ 4̸ 5̸ 6̸ 7̸ 8̸ 9̸ A̸ B̸ C̸ D̸ E̸ F̸ G̸ H̸ J̸ K̸ L̸ M̸ N̸ P̸ Q̸ R̸ S̸ T̸ W̸ X̸ Y̸ Z̸
-    0x110.....: ̂0 ̂1 ̂2 ̂3 ̂4 ̂5 ̂6 ̂7 ̂8 ̂9 ̂A ̂B ̂C ̂D ̂E ̂F ̂G ̂H ̂J ̂K ̂L ̂M ̂N ̂P ̂Q ̂R ̂S ̂T ̂W ̂X ̂Y ̂Z
-    0x111.....: ̈0 ̈1 ̈2 ̈3 ̈4 ̈5 ̈6 ̈7 ̈8 ̈9 ̈A ̈B ̈C ̈D ̈E ̈F ̈G ̈H ̈J ̈K ̈L ̈M ̈N ̈P ̈Q ̈R ̈S ̈T ̈W ̈X ̈Y ̈Z
+    0x110.....: 0̂ 1̂ 2̂ 3̂ 4̂ 5̂ 6̂ 7̂ 8̂ 9̂ Â B̂ Ĉ D̂ Ê F̂ Ĝ Ĥ Ĵ K̂ L̂ M̂ N̂ P̂ Q̂ R̂ Ŝ T̂ Ŵ X̂ Ŷ Z
+    0x111.....: 0̈ 1̈ 2̈ 3̈ 4̈ 5̈ 6̈ 7̈ 8̈ 9̈ Ä B̈ C̈ D̈ Ë F̈ G̈ Ḧ J̈ K̈ L̈ M̈ N̈ P̈ Q̈ R̈ S̈ T̈ Ẅ Ẍ Ÿ Z
     → ¨ is 11, one 1 for each dot
     → / is 01, because the upper part of / is to the right
-    → ^ is 10, because the single 1 in 10 is in the most significant position
+    → ^ is 10, because the circumflex points up and the single 1 in 10 is in the most significant position
     → ~ is 00, because is the other flat simbol
 
 
