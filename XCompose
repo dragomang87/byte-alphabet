@@ -215,16 +215,6 @@ include "%L"
 <Multi_key> <c> <m> <minus>:                     "\xCC\xB6" UCCB6  # "\"\\u0336\"" U0336  # "\u0336" U0336  #
 <Multi_key> <c> <m> <slash>:                     "\xCC\xB8" UCCB8  # "\"\\u0338\"" U0338  # "\u0338" U0338  #
 
-<Multi_key> <f> <t> <1>:  "\xCC\xB8"    # LÌ¸L
-<Multi_key> <f> <t> <2>:  "\"\\u0338\"" # L"\u0338"L
-<Multi_key> <f> <t> <3>:  "\u0338"      # LL
-<Multi_key> <f> <t> <4>:   "+0338"      # L+0338L
-<Multi_key> <f> <t> <5>:  "U+0338"      # LU+0338L
-<Multi_key> <f> <t> <6>:  "%03%38"      # L%03%38L
-<Multi_key> <f> <t> <7>:  "%CC%B8"      # L%CC%B8L
-<Multi_key> <f> <t> <8>:  "&#0338"      # L&#0338L
-<Multi_key> <f> <t> <9>:  "0x0338"      # L0x0338L
-
 # symbols: ∮  ∏ א ∞ ⊂ ⊆ ∌ ∋ ⊇ ⊃ o ∘ ⋅  † T ⊤ ⊥ ¬ ∪ ∩  ⋉ ⋊ ⋈ ∝    ≡ ≪ ≫ ≤ ≥ ≦ ≧ ≺ ≻ ⇔ ⇒ ⇌ ↑ ↗ ↨ ↻ ა ⇣  ⌈⌉ ⌊⌋ ⟦⟧ ⟪⟫
 # implemented:  → ≠ √ ∨ ∧ ⊕ ⊗ ∑ ∂ ∀ ∃ ∉ ∈
 
