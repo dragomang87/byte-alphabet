@@ -64,9 +64,9 @@ As an example, the above hex strings would be represented as follows with the pr
 ```
 8  : 0y1T (none)
 16 : 0y10B̲ (underline)
-32 : 0y1000 ̃D (tilde)
+32 : 0y1000D̃ (tilde)
 64 : 0y10000000T (none)
-128: 0y1000000000000000 ̃7 (tilde)
+128: 0y10000000000000007̃ (tilde)
 256: 0y10000000000000000000000000000004R (none)
 512: 0y1000000000000000000000000000000000000000000000000000000000000001R (none)
 ```
