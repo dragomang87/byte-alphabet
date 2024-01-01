@@ -45,14 +45,16 @@ The essence is the following: the 8 bits are separated into 3 + 5 bits
   * ```0xx```: none, underline, strikethrough, overline
   * ```1xx```: tilde, slash, circumflex (hat), dieresis (umlaut)
 Giving the following alphabet:
-    0x000.....: 0 1 2 3 4 5 6 7 8 9 A B C D E F G H J K L M N P Q R S T W X Y Z
-    0x001.....: 0̲ 1̲ 2̲ 3̲ 4̲ 5̲ 6̲ 7̲ 8̲ 9̲ A̲ B̲ C̲ D̲ E̲ F̲ G̲ H̲ J̲ K̲ L̲ M̲ N̲ P̲ Q̲ R̲ S̲ T̲ W̲ X̲ Y̲ Z̲
-    0x010.....: 0̶ 1̶ 2̶ 3̶ 4̶ 5̶ 6̶ 7̶ 8̶ 9̶ A̶ B̶ C̶ D̶ E̶ F̶ G̶ H̶ J̶ K̶ L̶ M̶ N̶ P̶ Q̶ R̶ S̶ T̶ W̶ X̶ Y̶ Z̶
-    0x011.....: 0̅ 1̅ 2̅ 3̅ 4̅ 5̅ 6̅ 7̅ 8̅ 9̅ A̅ B̅ C̅ D̅ E̅ F̅ G̅ H̅ J̅ K̅ L̅ M̅ N̅ P̅ Q̅ R̅ S̅ T̅ W̅ X̅ Y̅ Z̅
-    0x100.....: 0̃ 1̃ 2̃ 3̃ 4̃ 5̃ 6̃ 7̃ 8̃ 9̃ Ã B̃ C̃ D̃ Ẽ F̃ G̃ H̃ J̃ K̃ L̃ M̃ Ñ P̃ Q̃ R̃ S̃ T̃ W̃ X̃ Ỹ Z
-    0x101.....: 0̸ 1̸ 2̸ 3̸ 4̸ 5̸ 6̸ 7̸ 8̸ 9̸ A̸ B̸ C̸ D̸ E̸ F̸ G̸ H̸ J̸ K̸ L̸ M̸ N̸ P̸ Q̸ R̸ S̸ T̸ W̸ X̸ Y̸ Z̸
-    0x110.....: 0̂ 1̂ 2̂ 3̂ 4̂ 5̂ 6̂ 7̂ 8̂ 9̂ Â B̂ Ĉ D̂ Ê F̂ Ĝ Ĥ Ĵ K̂ L̂ M̂ N̂ P̂ Q̂ R̂ Ŝ T̂ Ŵ X̂ Ŷ Z
-    0x111.....: 0̈ 1̈ 2̈ 3̈ 4̈ 5̈ 6̈ 7̈ 8̈ 9̈ Ä B̈ C̈ D̈ Ë F̈ G̈ Ḧ J̈ K̈ L̈ M̈ N̈ P̈ Q̈ R̈ S̈ T̈ Ẅ Ẍ Ÿ Z
+```
+0x000.....: 0 1 2 3 4 5 6 7 8 9 A B C D E F G H J K L M N P Q R S T W X Y Z
+0x001.....: 0̲ 1̲ 2̲ 3̲ 4̲ 5̲ 6̲ 7̲ 8̲ 9̲ A̲ B̲ C̲ D̲ E̲ F̲ G̲ H̲ J̲ K̲ L̲ M̲ N̲ P̲ Q̲ R̲ S̲ T̲ W̲ X̲ Y̲ Z̲
+0x010.....: 0̶ 1̶ 2̶ 3̶ 4̶ 5̶ 6̶ 7̶ 8̶ 9̶ A̶ B̶ C̶ D̶ E̶ F̶ G̶ H̶ J̶ K̶ L̶ M̶ N̶ P̶ Q̶ R̶ S̶ T̶ W̶ X̶ Y̶ Z̶
+0x011.....: 0̅ 1̅ 2̅ 3̅ 4̅ 5̅ 6̅ 7̅ 8̅ 9̅ A̅ B̅ C̅ D̅ E̅ F̅ G̅ H̅ J̅ K̅ L̅ M̅ N̅ P̅ Q̅ R̅ S̅ T̅ W̅ X̅ Y̅ Z̅
+0x100.....: 0̃ 1̃ 2̃ 3̃ 4̃ 5̃ 6̃ 7̃ 8̃ 9̃ Ã B̃ C̃ D̃ Ẽ F̃ G̃ H̃ J̃ K̃ L̃ M̃ Ñ P̃ Q̃ R̃ S̃ T̃ W̃ X̃ Ỹ Z
+0x101.....: 0̸ 1̸ 2̸ 3̸ 4̸ 5̸ 6̸ 7̸ 8̸ 9̸ A̸ B̸ C̸ D̸ E̸ F̸ G̸ H̸ J̸ K̸ L̸ M̸ N̸ P̸ Q̸ R̸ S̸ T̸ W̸ X̸ Y̸ Z̸
+0x110.....: 0̂ 1̂ 2̂ 3̂ 4̂ 5̂ 6̂ 7̂ 8̂ 9̂ Â B̂ Ĉ D̂ Ê F̂ Ĝ Ĥ Ĵ K̂ L̂ M̂ N̂ P̂ Q̂ R̂ Ŝ T̂ Ŵ X̂ Ŷ Z
+0x111.....: 0̈ 1̈ 2̈ 3̈ 4̈ 5̈ 6̈ 7̈ 8̈ 9̈ Ä B̈ C̈ D̈ Ë F̈ G̈ Ḧ J̈ K̈ L̈ M̈ N̈ P̈ Q̈ R̈ S̈ T̈ Ẅ Ẍ Ÿ Z
+```
 
 The main problem with the notation is that the visibility of the diacritics
 is very font dependent and is likely indiscernible or badly displayed with many fonts.
@@ -203,7 +205,7 @@ Notice how:
     therefore many first position hex pairs are reserved as commands,
     making many codes different and sometimes even longer)
 * ```0x<UTF-8 diacritic> - 0x<UTF-16 diacritic> = 0xC920```;
-  namely the the UTF-8 values are just the UTF-16 values shifted by (added to) 0xC920
+  namely the the UTF-8 values are just the UTF-16 values shifted by (added to) ```0xC920```
 
 Position: an example of a font that does not display correctly is SauceCodePro Nerd Font.
 The table shows in which position the diacritic must be with respect to the character
@@ -225,19 +227,19 @@ is to use [ANSI escape sequences](https://gist.github.com/fnky/458719343aabd01cf
 Essentially, for what concerns us, ANSI escape sequences define
 fixed length sequences to encode, in particular, hex and unicode values:
   * hex values: hex values are written in pairs as sequences of ```\x..```
-                where each dot denots one hex symbols, e.g. "\x01\x23\x45\x67\x89\xAB\xCD\xEF"
-  * unicodes: ```\u....``` followed by the four hex symbols, e.g. "\u0123"
+                where each dot denots one hex symbols, e.g. ```"\x01\x23\x45\x67\x89\xAB\xCD\xEF"```
+  * unicodes: ```\u....``` followed by the four hex symbols, e.g. ```"\u0123"```
 
 When the unicode character is provided as ```\u....``` there is no ambiguity, for example
   * ```"L\u0338L"``` = ```L̸L  ```: the unicode/UTF-16 renders correctly
   * ```"L\uCCB8L"``` = ```L첸L```: the UTF-8 code just renders another character
 
 However, if we present a unicode characters as ```\x..\x..``` four things can happen
-  * The two hex pairs are interpreted as UTF-8:
-    ```"L\x03\x38L"``` as UTF8  = ```L8L    ```: the unicode/UTF-16 code will not work
+  * The two hex pairs are interpreted as UTF-8:  
+    ```"L\x03\x38L"``` as UTF8  = ```L8L    ```: the unicode/UTF-16 code will not work  
     ```"L\xCC\xB8L"``` as UTF8  = ```L̸L     ```: success!!
-  * The two pairs are interpreted as two unicode/UTF-16 characters in the form ```\u00..```
-    ```"L\x03\x38L"``` as UTF16 = ```L\x038L```
+  * The two pairs are interpreted as two unicode/UTF-16 characters in the form ```\u00..```  
+    ```"L\x03\x38L"``` as UTF16 = ```L\x038L```  
     ```"L\xCC\xB8L"``` as UTF16 = ```LÌ¸L   ```
     neither will work because the codes are alway wrong.
 
@@ -246,6 +248,7 @@ There are thus only three ways to write diacritics
   * Paste the symbols directly, e.g. ```L̸L```
   * Unicode/UTF-16 ```"\u...."```, e.g. ```"L\u0338L"```
   * UTF-8 ```"\x..\x.."```, e.g. ```"L\xCC\xB8L"```
+
 but which one to use? well, to quote Geralt of Rivia: "ah, fuck!"
 
 
@@ -272,7 +275,8 @@ Recognized console **input**:
   * alacritty:
     * copy
     * ```"L\xCC\xB8L"``` from **compose key**
-  but ```L<0338>L``` is displayed insted
+
+    however ```L<0338>L``` is displayed instead.
 
 
 
@@ -301,7 +305,7 @@ Output codes behaviour in alacritty:
   * ```"\u...."``` in vim is just ```"\u...."``` in text
 
 Besides this, I made the following design choices:
-* each sequence contains c+m for "combine",
+* each sequence contains ```c```+```m``` for "combine",
   it was the quickest way to implement them
   while being fairly certain that I did not overwrite other bindings
 * The final key in the sequence is the ascii version of the diacritic,
@@ -339,7 +343,7 @@ For example, in Firefox, both in the address bar or in Google search field, I tr
 The rest of the file contains:
 * greek alphabet (with different layout based on the name of the greek character,
   e.g. ```d```+```e``` for ```δ``` (**de**lta) and ```D```+```e``` for ```Δ``` (**De**lta)
-* double stroke numbers and latin letters (used for additional notation, e.g. 0y𝔽 = 0xFF)
+* double stroke numbers and latin letters (used for additional notation, e.g. ```0y𝔽 = 0xFF```)
 * math symbols (eg
   ```s```+```u```+```m``` for ```∑```,
   ```k```+```e```+```t``` for ```⟩```,
