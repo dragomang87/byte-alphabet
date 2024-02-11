@@ -169,6 +169,7 @@ include "%L"
 <Multi_key> <k> <e> <t>: "⟩"
 <Multi_key> <b> <r> <a>: "⟨"
 <Multi_key> <O> <x>: "⊗"
+<Multi_key> <O> <period>: "⊙"    # U+2299 'CIRCLED DOT OPERATOR'
 <Multi_key> <O> <plus>: "⊕"
 <Multi_key> <O> <asterisk>: "⊛" # U+229B # Since + and * are addition and multiplication, and <O> <plus>: "⊕" is XOR addition, I choose <O> <asterisk>: "⊛" for XOR multiplication
 <Multi_key> <d> <d>: "∂"
@@ -189,16 +190,22 @@ include "%L"
 ## some because they have the dead key variant and the ascii variant
 ## Not working      Dead key             Ascii key
 ##   <+>                                 <plus>
+##   <->                                 <minus>
+##   <_>                                 <underscore>
 ##   <^>            <dead_circumflex>    <asciicircum>
 ##   <|>                                 <bar>
 ##   <:>                                 <colon>
+##   <.>                                 <period>
 ##   <*>                                 <asterisk>
 ##   <~>            <dead_tilde>         <asciitilde>
 ##                  <dead_diaeresis>     <diaeresis>
 ## Others:  <greater> <acute><dead_acute> <grave><dead_grave> <apostrophe>
-##          <equal> <period> <dead_stroke><slash> <less> <minus> <underscore>
-##          <parenleft>
+##          <equal> <dead_stroke><slash> <less>
+##          <parenleft> <exclam>
 ##          <comma> <quotedbl>
+
+
+
 
 # Combining symbols
 # ⋅ combining symbol position depends on the diacritic, font and program:
@@ -209,9 +216,11 @@ include "%L"
 # ⋅ python    uses UTF16
 # ⋅ alacritty uses UTF8
 #
+#
+# Diacritics:
 # Hex values (taken from https://www.fileformat.info/info/unicode)
 #                                UNICODE
-#                         UTF-8  UTF-16  Position example (SauceCodePro Nerd Font)
+#                         UTF-8  UTF-16 Position in SauceCodePro Nerd Font (relative to character)
 # circumflex (hat)     ^: 0xCC82 0x0302  before
 # tilde                ~: 0xCC83 0x0303  before
 # overline             ¯: 0xCC85 0x0305  before
@@ -225,8 +234,9 @@ include "%L"
 #
 # How to write 0x<hex>:
 #   - In Python/C/C++/Java: "\u<UTF16 hex>"
-#   - In terminal:  echo -e "\x<UTF8 hex pair 1>\x<UTF8 hex pair 2>..."
+#   - In terminal:  echo "\x<UTF8 hex pair 1>\x<UTF8 hex pair 2>..."
 #                   (split the hex in pairs preceded by \x)
+#   - Compose key: " <c> <m> " stands for "combine"
 <Multi_key> <c> <m> <asciicircum> <asciicircum>: "\xCC\x82" UCC82  # "\"\\u0302\"" U0302  # "\u0302" U0302  #
 <Multi_key> <c> <m> <asciitilde>:                "\xCC\x83" UCC83  # "\"\\u0303\"" U0303  # "\u0303" U0303  #
 <Multi_key> <c> <m> <asciicircum> <minus>:       "\xCC\x85" UCC85  # "\"\\u0305\"" U0305  # "\u0305" U0305  #

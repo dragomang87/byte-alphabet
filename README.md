@@ -144,6 +144,7 @@ A full explanation of the two parts is given after the code.
 # ⋅ alacritty uses UTF8
 #
 # Diacritics:
+# Hex values (taken from https://www.fileformat.info/info/unicode)
 #                                UNICODE
 #                         UTF-8  UTF-16 Position in SauceCodePro Nerd Font (relative to character)
 # circumflex (hat)     ^: 0xCC82 0x0302  before
@@ -158,18 +159,19 @@ A full explanation of the two parts is given after the code.
 #   (slash)
 #
 # How to write 0x<hex>:
-#   - In Python/C/C++/Java:    u"\u<UTF16 hex>"
+#   - In Python/C/C++/Java: "\u<UTF16 hex>"
 #   - In terminal:  echo "\x<UTF8 hex pair 1>\x<UTF8 hex pair 2>..."
 #                   (split the hex in pairs preceded by \x)
-<Multi_key> <c> <m> <asciicircum> <asciicircum>:"\xCC\x82" UCC82  # "\"\\u0302\"" U0302  # "\u0302" U0302
-<Multi_key> <c> <m> <asciitilde>:               "\xCC\x83" UCC83  # "\"\\u0303\"" U0303  # "\u0303" U0303
-<Multi_key> <c> <m> <asciicircum> <minus>:      "\xCC\x85" UCC85  # "\"\\u0305\"" U0305  # "\u0305" U0305
-<Multi_key> <c> <m> <asciicircum> <underscore>: "\xCC\x85" UCC85  # "\"\\u0305\"" U0305  # "\u0305" U0305
-<Multi_key> <c> <m> <quotedbl>:                 "\xCC\x88" UCC88  # "\"\\u0308\"" U0308  # "\u0308" U0308
-<Multi_key> <c> <m> <o>:                        "\xCC\x8A" UCC8A  # "\"\\u030A\"" U030A  # "\u030A" U030A
-<Multi_key> <c> <m> <underscore>:               "\xCC\xB2" UCCB2  # "\"\\u0332\"" U0332  # "\u0332" U0332
-<Multi_key> <c> <m> <minus>:                    "\xCC\xB6" UCCB6  # "\"\\u0336\"" U0336  # "\u0336" U0336
-<Multi_key> <c> <m> <slash>:                    "\xCC\xB8" UCCB8  # "\"\\u0338\"" U0338  # "\u0338" U0338
+#   - Compose key: " <c> <m> " stands for "combine"
+<Multi_key> <c> <m> <asciicircum> <asciicircum>: "\xCC\x82" UCC82  # "\"\\u0302\"" U0302  # "\u0302" U0302  #
+<Multi_key> <c> <m> <asciitilde>:                "\xCC\x83" UCC83  # "\"\\u0303\"" U0303  # "\u0303" U0303  #
+<Multi_key> <c> <m> <asciicircum> <minus>:       "\xCC\x85" UCC85  # "\"\\u0305\"" U0305  # "\u0305" U0305  #
+<Multi_key> <c> <m> <asciicircum> <underscore>:  "\xCC\x85" UCC85  # "\"\\u0305\"" U0305  # "\u0305" U0305  #
+<Multi_key> <c> <m> <quotedbl>:                  "\xCC\x88" UCC88  # "\"\\u0308\"" U0308  # "\u0308" U0308  #
+<Multi_key> <c> <m> <o>:                         "\xCC\x8A" UCC8A  # "\"\\u030A\"" U030A  # "\u030A" U030A  #
+<Multi_key> <c> <m> <underscore>:                "\xCC\xB2" UCCB2  # "\"\\u0332\"" U0332  # "\u0332" U0332  #
+<Multi_key> <c> <m> <minus>:                     "\xCC\xB6" UCCB6  # "\"\\u0336\"" U0336  # "\u0336" U0336  #
+<Multi_key> <c> <m> <slash>:                     "\xCC\xB8" UCCB8  # "\"\\u0338\"" U0338  # "\u0338" U0338  #
 ```
 
 The explanation for the hex values and the compose sequences follows in the next sections below.
