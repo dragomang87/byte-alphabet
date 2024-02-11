@@ -95,7 +95,10 @@ include "%L"
 <Multi_key> <P> <P> : "ℙ"
 <Multi_key> <Q> <Q> : "ℚ"
 <Multi_key> <R> <R> : "ℝ"
+# Collision with german "Scharf s" uppercase
 <Multi_key> <S> <S> : "𝕊"
+<Multi_key> <bar> <S>: "ẞ"
+<Multi_key> <bar> <B>: "ẞ"
 <Multi_key> <T> <T> : "𝕋"
 <Multi_key> <U> <U> : "𝕌"
 <Multi_key> <V> <V> : "𝕍"
@@ -122,7 +125,10 @@ include "%L"
 <Multi_key> <p> <p> : "𝕡"
 <Multi_key> <q> <q> : "𝕢"
 <Multi_key> <r> <r> : "𝕣"
+# Collision with german "Scharf s" lowercase
 <Multi_key> <s> <s> : "𝕤"
+<Multi_key> <bar> <s>: "ß"
+<Multi_key> <bar> <b>: "ß"
 <Multi_key> <t> <t> : "𝕥"
 <Multi_key> <u> <u> : "𝕦"
 <Multi_key> <v> <v> : "𝕧"
@@ -133,6 +139,22 @@ include "%L"
 
 
 # Math
+
+# Superscripts and subscripts
+# Conflicting ^ and _
+<Multi_key> <asciicircum> <asciicircum> <i>: "ⁱ"
+<Multi_key> <asciicircum> <asciicircum> <j>: "ʲ"
+<Multi_key> <underscore>  <underscore>  <i>: "ᵢ"
+<Multi_key> <underscore>  <underscore>  <j>: "ⱼ"
+# Non conflicting ^ and _
+<Multi_key> <asciicircum> <l>: "ᵏ"
+<Multi_key> <asciicircum> <l>: "ˡ"
+<Multi_key> <asciicircum> <n>: "ⁿ"
+<Multi_key> <asciicircum> <p>: "ᵖ"
+<Multi_key> <underscore>  <k>: "ₖ"
+<Multi_key> <underscore>  <l>: "ₗ"
+<Multi_key> <underscore>  <n>: "ₙ"
+<Multi_key> <underscore>  <p>: "ₚ"
 
 # <Multi_key> <N> <N>: "ℕ"
 # <Multi_key> <Z> <Z>: "ℤ"
