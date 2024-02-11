@@ -8,9 +8,8 @@ they are also the choice that makes for the shortest representation.
 
 For certain applications however, in particular security, data chunks of considerable size,
 e.g. 128 bits and above, are used both theoretically and in practice (e.g. AES instruction set extension).
-While still the shortest representation, hexadecimal representations of 128 bits and above
-are still quite large and unmanageable in manual and direct inspection.
-This is exacerbated by the fact that most of the time the number of bits of the data chunks are themselves powers of 2.
+While hexadecimal is still the shortest representation, hexadecimal 128 bits and above
+are still quite large in manual and direct inspection.
 
 The goal of this repository is to propose an intuitive byte alphabet
 and a way to type them using Linux's Compose key.
@@ -30,7 +29,7 @@ taken from https://www.hpl.hp.com/techreports/98/HPL-98-135.pdf:
 512: 0x100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000125
 ```
 
-Having a full set of symbols for one by (two hex's), would at least mitigate this problem slightly.
+Having a full set of symbols for one byte (two hex's), would at least mitigate this problem slightly.
 Notice that for some applications like exactly displaying low weight numbers with many consecutive zeros as above,
 the impact of such change would be minimal, as most of the symbols would still be zero.
 
@@ -60,7 +59,8 @@ The main problem with the notation is that the visibility of the diacritics
 is very font dependent and is likely indiscernible or badly displayed with many fonts.
 
 ## Examples
-As an example, the above hex strings would be represented as follows with the proposed byte alphabet (where indeed the tilde's are not displayed properly):
+As an example, the low weight irreducible polynomials above would be represented as follows with the proposed byte alphabet
+(you should be able to see a tilde on top of D and 7 and an underscore under B):
 ```
 8  : 0y1T (none)
 16 : 0y10B̲ (underline)
@@ -75,7 +75,7 @@ As you can see, a byte alphabet would make these bitstring sizes more manageable
 ## Applications
 The data sizes displayed above are not uncommon anymore.
 For example, the [AVX-512](https://en.wikipedia.org/wiki/AVX-512) SIMD extension adds support for 32 registers of 512 bits,
-together with their 256 and 128 bits sub-registers.
+together with their 256 and 128 bits sub-registers. With this alphabet, these registers can be addressed with one symbol and their content can be displayed with half the space. 
 
 
 
@@ -142,16 +142,19 @@ A full explanation of the two parts is given after the code.
 # ⋅ UTF8[<character>] - UTF16[<character>] = 0xC920
 # ⋅ python    uses UTF16
 # ⋅ alacritty uses UTF8
-#                         UTF-8  UTF-16 Position (with respect to character)
-# circumflex (hat)     ^: 0xCC82 0x0302 before
-# tilde                ~: 0xCC83 0x0303 before
-# overline             ¯: 0xCC85 0x0305 before
-# diaeresis/umlaut     ": 0xCC88 0x0308 before
-# ring above           ˚: 0xCC8A 0x030A before
-# low line/underscore  _: 0xCCB2 0x0332 after
-# long stroke overlay  -: 0xCCB6 0x0336 after
+#
+# Diacritics:
+#                                UNICODE
+#                         UTF-8  UTF-16 Position in SauceCodePro Nerd Font (relative to character)
+# circumflex (hat)     ^: 0xCC82 0x0302  before
+# tilde                ~: 0xCC83 0x0303  before
+# overline             ¯: 0xCC85 0x0305  before
+# diaeresis/umlaut     ": 0xCC88 0x0308  before
+# ring above           ˚: 0xCC8A 0x030A  before
+# low line/underscore  _: 0xCCB2 0x0332  after
+# long stroke overlay  -: 0xCCB6 0x0336  after
 #   (strikethrough)
-# long solidus overlay /: 0xCCB8 0x0338 after
+# long solidus overlay /: 0xCCB8 0x0338  after
 #   (slash)
 #
 # How to write 0x<hex>:
@@ -179,8 +182,9 @@ The explanation for the hex values and the compose sequences follows in the next
 
 The following table is kept for reference as comment in the XCompose.
 ```
+# Diacritics:
 #                                UNICODE
-#                         UTF-8  UTF-16  Position example (SauceCodePro Nerd Font)
+#                         UTF-8  UTF-16  Position in SauceCodePro Nerd Font (relative to character)
 # circumflex (hat)     ^: 0xCC82 0x0302  before
 # tilde                ~: 0xCC83 0x0303  before
 # overline             ¯: 0xCC85 0x0305  before
@@ -214,7 +218,7 @@ But again adapting the order to suit your font is a **bad idea**
 (like any hack to "compensate" for a font).
 The "fix" will not hold up to the text being used in other programs or by other people,
 and will need to be reverted if the font gets fixed at some point.
-Not to mention that if, in order to display a character correctly, you place a diacritc at the beginning of a string, line or file then you might get unpredictable behaviour.
+Not to mention that if, in order to display a character correctly, you place a diacritc at the beginning of a string, a line or a file, then you might get unpredictable behaviour.
 Therefore it is much more sensible to put the effort in finding a better font.
 One currently good choice seems to be RobotoMono Nerd Font, as mentione above.
 
@@ -285,7 +289,7 @@ Recognized console **input**:
 ## The compose sequences of the diacritics
 
 The following are my working compose sequences for the diacritics.
-The way the behave is outline in the section above explaining [the hex values](#the-hex-values-of-the-diacritics))
+The way they behave is outlined in the section above explaining [the hex values](#the-hex-values-of-the-diacritics))
 ```
 <Multi_key> <c> <m> <asciicircum> <asciicircum>:"\xCC\x82" UCC82  # "\"\\u0302\"" U0302  # "\u0302" U0302
 <Multi_key> <c> <m> <asciitilde>:               "\xCC\x83" UCC83  # "\"\\u0303\"" U0303  # "\u0303" U0303
