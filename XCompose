@@ -184,176 +184,147 @@ include "%L"
 <Multi_key> <colon> <equal>: "≔"
 #<Multi_key> <:> <=>: "≔"
 
+<Multi_key> <u>          <braceleft> : "⎧"
+<Multi_key> <braceleft>  <braceleft> : "⎨"
+<Multi_key> <d>          <braceleft> : "⎩"
+<Multi_key> <u>          <braceright>: "⎫"
+<Multi_key> <braceright> <braceright>: "⎬"
+<Multi_key> <d>          <braceright>: "⎭"
+<Multi_key> <bar> <bar>              : "⎟"
 
 
 # Special Keysyms
-## Some non trivial keysyms do not work because there are multiple versions of them
-## some because they have the dead key variant and the ascii variant
-## Not working      Dead key             Ascii key
-##   <+>                                 <plus>
-##   <->                                 <minus>
-##   <_>                                 <underscore>
-##   <^>            <dead_circumflex>    <asciicircum>
-##   <|>                                 <bar>
-##   <:>                                 <colon>
-##   <.>                                 <period>
-##   <*>                                 <asterisk>
-##   <~>            <dead_tilde>         <asciitilde>
-##                  <dead_diaeresis>     <diaeresis>
-## Others:
-##      apostrophe quotedbl grave acute
-##      asciitilde at numbersign dollar asciicircum ampersand asterisk
-##      period comma colon semicolon question exclam
-##      equal less greater plus minus percent
-##        parenleft   parenright
-##        braceleft   braceright
-##      bracketleft bracketright
-##      bar slash backslash underscore
-## Deadkeys:
-##      dead_acute          = Alt_Gr + apostrophe
-##      dead_grave          = Alt_Gr + grave
-##      dead_abovedot       = Alt_Gr + dot
-##      dead_circumflex     = Alt_Gr + 6 (asciicircum)
-##      dead_horn           = Alt_Gr + 7 (ampersand)
-##      dead_ogonek         = Alt_Gr + 8 (asterisk)
-##      dead_stroke         = Alt_Gr + Shift + b          (B)
-##      dead_caron          = Alt_Gr + Shift + period     (greater)
-##      dead_hook           = Alt_Gr + Shift + slash      (question)
-##      dead_diaeresis      = Alt_Gr + Shift + apostrophe (quotedbl)
-##      dead_tilde          = Alt_Gr + Shift + grave      (tilde)
-##      dead_doubleacute    = Alt_Gr + Shift + 2          (at)
-##      dead_macron         = Alt_Gr + Shift + 3          (numbersign)
-##      dead_cedilla        = Alt_Gr + Shift + 5          (percent)
-##      dead_breve          = Alt_Gr + Shift + 9          (parenleft)
-##      dead_abovering      = Alt_Gr + Shift + 0          (parenright)
-##      dead_belowdot       = Alt_Gr + Shift + minus      (underscore)
-## AltGr keys
-##      Alt_Gr + 1             = ¹ = onesuperior
-##      Alt_Gr + 2             = ² = twosuperior
-##      Alt_Gr + 3             = ³ = threesuperior
-##      Alt_Gr + 4             = ¤ = currency
-##      Alt_Gr + 5             = € = EuroSign
-##      Alt_Gr + 9             = ‘ =  leftsinglequotesign
-##      Alt_Gr + 0             = ’ = rightsinglequotesign
-##      Alt_Gr + comma         = ç = ccedilla
-##      Alt_Gr + slash         = ¿ = questiondown
-##      Alt_Gr + semicolon     = ¶ = paragraph
-##      Alt_Gr + bracketleft   = « = guillemotright
-##      Alt_Gr + bracketright  = » = guillemotright
-##      Alt_Gr + backslash     = ¬ = notsign
-##      Alt_Gr + minus         = ¥ = yen
-##      Alt_Gr + equal         = × = multiply
-##      Alt_Gr + a             = á = aacute
-##      Alt_Gr + b             = · = periodcentered
-##      Alt_Gr + c             = © = copyright
-##      Alt_Gr + d             = ð = eth
-##      Alt_Gr + e             = é = eacute
-##      Alt_Gr + f             = f = f
-##      Alt_Gr + g             = g = g
-##      Alt_Gr + h             = h = h
-##      Alt_Gr + i             = í = iacute
-##      Alt_Gr + j             = ï = idiaeresis
-##      Alt_Gr + k             = œ = oe
-##      Alt_Gr + l             = ø = oslash
-##      Alt_Gr + m             = µ = mu
-##      Alt_Gr + n             = ñ = ntilde
-##      Alt_Gr + o             = ó = oacute
-##      Alt_Gr + p             = ö = odiaeresis
-##      Alt_Gr + q             = ä = adiaeresis
-##      Alt_Gr + r             = ë = ediaeresis
-##      Alt_Gr + s             = ß = ssharp
-##      Alt_Gr + t             = þ = thorn
-##      Alt_Gr + u             = ú = uacute
-##      Alt_Gr + v             = ® = registered
-##      Alt_Gr + w             = å = aring
-##      Alt_Gr + x             = œ = oe
-##      Alt_Gr + y             = ü = udiaeresis
-##      Alt_Gr + z             = æ = ae
-## AltGr + Shift keys
-##      Alt_Gr + Shift + 1     = ¡ = exclamdown
-##      Alt_Gr + Shift + 4     = £ = sterling
-##      Alt_Gr + Shift + 6     = ¼ = onequarter
-##      Alt_Gr + Shift + 7     = ½ = onehalf
-##      Alt_Gr + Shift + 8     = ¾ = threequarters
-##      Alt_Gr + Shift + equal = ÷ = division
-##      Alt_Gr + Shift + comma = Ç = Ccedilla
-##      Alt_Gr + Shift + colon = ° = degree
-##      Alt_Gr + Shift + [     = “ = leftdoublequotemark
-##      Alt_Gr + Shift + ]     = ” = rightdoublequotemark
-##      Alt_Gr + Shift + bar   = ¦ = brokenbar
-##      Alt_Gr + A             = Á = Aacute
-##      Alt_Gr + C             = ¢ = cent
-##      Alt_Gr + D             = Ð = ETH
-##      Alt_Gr + E             = É = Eacute
-##      Alt_Gr + F             = F = F
-##      Alt_Gr + G             = G = G
-##      Alt_Gr + H             = H = H
-##      Alt_Gr + I             = Í = Iacute
-##      Alt_Gr + J             = Ï = Idiaeresis
-##      Alt_Gr + K             = Œ = OE
-##      Alt_Gr + L             = Ø = Oslash
-##      Alt_Gr + M             = ± = plusminus
-##      Alt_Gr + N             = Ñ = Ntilde
-##      Alt_Gr + O             = Ó = Oacute
-##      Alt_Gr + P             = Ö = Odiaeresis
-##      Alt_Gr + Q             = Ä = Adiaeresis
-##      Alt_Gr + R             = Ë = Ediaeresis
-##      Alt_Gr + S             = § = section
-##      Alt_Gr + T             = Þ = THORN
-##      Alt_Gr + U             = Ú = Uacute
-##      Alt_Gr + V             = ™ = trademark
-##      Alt_Gr + W             = Å = Aring
-##      Alt_Gr + X             = Œ = OE
-##      Alt_Gr + Y             = Ü = Udiaeresis
-##      Alt_Gr + Z             = Æ = AE
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#   - Some non trivial keysyms need names instead of symbols
+#   - Some have the prefix "ascii" in their name
+#   - Some have the dead key variant with "dead_" prefix
+#     (the prefix "ascii" is removed in the dead variant)
+# Setup:
+#   - ANSI keyboard
+#   - xkb_layout us
+#   - xkb_variant altgr-intl)
+#   - xkb_options compose:rctrl,lv3:ralt_switch
+#
+# Examples:
+#  Not working      Dead key             Ascii key
+#    <+>                                 <plus>
+#    <->                                 <minus>
+#    <_>                                 <underscore>
+#    <^>            <dead_circumflex>    <asciicircum>
+#    <|>                                 <bar>
+#    <:>                                 <colon>
+#    <.>                                 <period>
+#    <*>                                 <asterisk>
+#    <~>            <dead_tilde>         <asciitilde>
+#                   <dead_diaeresis>     <diaeresis>
+# Symbol keys:
+#       ' " ` ^     = apostrophe quotedbl grave acute
+#       ~ @ # $     = asciitilde at numbersign dollar
+#       ^ & *       = asciicircum ampersand asterisk
+#       . , : ;     = period comma colon semicolon
+#       ? !         = question exclam
+#       = < > + - % = equal less greater plus minus percent
+#       ( )         =   parenleft   parenright
+#       [ ]         = bracketleft bracketright
+#       { }         =   braceleft   braceright
+#       | / \ _     = bar slash backslash underscore
+#       Up Down Left Right
+# Deadkeys:
+#       dead_acute          = Alt_Gr + apostrophe
+#       dead_grave          = Alt_Gr + grave
+#       dead_abovedot       = Alt_Gr + dot
+#       dead_circumflex     = Alt_Gr + 6 (asciicircum)
+#       dead_horn           = Alt_Gr + 7 (ampersand)
+#       dead_ogonek         = Alt_Gr + 8 (asterisk)
+#       dead_stroke         = Alt_Gr + Shift + b          (B)
+#       dead_caron          = Alt_Gr + Shift + period     (greater)
+#       dead_hook           = Alt_Gr + Shift + slash      (question)
+#       dead_diaeresis      = Alt_Gr + Shift + apostrophe (quotedbl)
+#       dead_tilde          = Alt_Gr + Shift + grave      (tilde)
+#       dead_doubleacute    = Alt_Gr + Shift + 2          (at)
+#       dead_macron         = Alt_Gr + Shift + 3          (numbersign)
+#       dead_cedilla        = Alt_Gr + Shift + 5          (percent)
+#       dead_breve          = Alt_Gr + Shift + 9          (parenleft)
+#       dead_abovering      = Alt_Gr + Shift + 0          (parenright)
+#       dead_belowdot       = Alt_Gr + Shift + minus      (underscore)
+# AltGr keys:
+#       Alt_Gr + 1             = ¹ = onesuperior
+#       Alt_Gr + 2             = ² = twosuperior
+#       Alt_Gr + 3             = ³ = threesuperior
+#       Alt_Gr + 4             = ¤ = currency
+#       Alt_Gr + 5             = € = EuroSign
+#       Alt_Gr + 9             = ‘ =  leftsinglequotesign
+#       Alt_Gr + 0             = ’ = rightsinglequotesign
+#       Alt_Gr + comma         = ç = ccedilla
+#       Alt_Gr + slash         = ¿ = questiondown
+#       Alt_Gr + semicolon     = ¶ = paragraph
+#       Alt_Gr + bracketleft   = « = guillemotright
+#       Alt_Gr + bracketright  = » = guillemotright
+#       Alt_Gr + backslash     = ¬ = notsign
+#       Alt_Gr + minus         = ¥ = yen
+#       Alt_Gr + equal         = × = multiply
+#       Alt_Gr + a             = á = aacute
+#       Alt_Gr + b             = · = periodcentered
+#       Alt_Gr + c             = © = copyright
+#       Alt_Gr + d             = ð = eth
+#       Alt_Gr + e             = é = eacute
+#       Alt_Gr + f             = f = f
+#       Alt_Gr + g             = g = g
+#       Alt_Gr + h             = h = h
+#       Alt_Gr + i             = í = iacute
+#       Alt_Gr + j             = ï = idiaeresis
+#       Alt_Gr + k             = œ = oe
+#       Alt_Gr + l             = ø = oslash
+#       Alt_Gr + m             = µ = mu
+#       Alt_Gr + n             = ñ = ntilde
+#       Alt_Gr + o             = ó = oacute
+#       Alt_Gr + p             = ö = odiaeresis
+#       Alt_Gr + q             = ä = adiaeresis
+#       Alt_Gr + r             = ë = ediaeresis
+#       Alt_Gr + s             = ß = ssharp
+#       Alt_Gr + t             = þ = thorn
+#       Alt_Gr + u             = ú = uacute
+#       Alt_Gr + v             = ® = registered
+#       Alt_Gr + w             = å = aring
+#       Alt_Gr + x             = œ = oe
+#       Alt_Gr + y             = ü = udiaeresis
+#       Alt_Gr + z             = æ = ae
+# AltGr + Shift keys
+#       Alt_Gr + Shift + 1     = ¡ = exclamdown
+#       Alt_Gr + Shift + 4     = £ = sterling
+#       Alt_Gr + Shift + 6     = ¼ = onequarter
+#       Alt_Gr + Shift + 7     = ½ = onehalf
+#       Alt_Gr + Shift + 8     = ¾ = threequarters
+#       Alt_Gr + Shift + equal = ÷ = division
+#       Alt_Gr + Shift + comma = Ç = Ccedilla
+#       Alt_Gr + Shift + colon = ° = degree
+#       Alt_Gr + Shift + [     = “ = leftdoublequotemark
+#       Alt_Gr + Shift + ]     = ” = rightdoublequotemark
+#       Alt_Gr + Shift + bar   = ¦ = brokenbar
+#       Alt_Gr + A             = Á = Aacute
+#       Alt_Gr + C             = ¢ = cent
+#       Alt_Gr + D             = Ð = ETH
+#       Alt_Gr + E             = É = Eacute
+#       Alt_Gr + F             = F = F
+#       Alt_Gr + G             = G = G
+#       Alt_Gr + H             = H = H
+#       Alt_Gr + I             = Í = Iacute
+#       Alt_Gr + J             = Ï = Idiaeresis
+#       Alt_Gr + K             = Œ = OE
+#       Alt_Gr + L             = Ø = Oslash
+#       Alt_Gr + M             = ± = plusminus
+#       Alt_Gr + N             = Ñ = Ntilde
+#       Alt_Gr + O             = Ó = Oacute
+#       Alt_Gr + P             = Ö = Odiaeresis
+#       Alt_Gr + Q             = Ä = Adiaeresis
+#       Alt_Gr + R             = Ë = Ediaeresis
+#       Alt_Gr + S             = § = section
+#       Alt_Gr + T             = Þ = THORN
+#       Alt_Gr + U             = Ú = Uacute
+#       Alt_Gr + V             = ™ = trademark
+#       Alt_Gr + W             = Å = Aring
+#       Alt_Gr + X             = Œ = OE
+#       Alt_Gr + Y             = Ü = Udiaeresis
+#       Alt_Gr + Z             = Æ = AE
 
 
 
